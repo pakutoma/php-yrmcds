@@ -23,6 +23,4 @@ if test "$PHP_YRMCDS" != "no"; then
         PHP_NEW_EXTENSION(yrmcds, yrmcds.c $extra_sources, $ext_shared,,
                           "-D_GNU_SOURCE -DLIBYRMCDS_USE_LZ4")
     fi
-    PHP_ADD_INCLUDE([$ext_srcdir/libyrmcds])
-    PHP_ADD_INCLUDE([$ext_srcdir/libyrmcds/lz4/lib])
 fi
